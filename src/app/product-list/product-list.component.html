@@ -1,0 +1,35 @@
+<app-search></app-search>
+
+<!-- for loop pole *ngFor  -->
+
+<!-- <div *ngFor="let item of list">
+    <p>Current element is : {{item}}</p>
+
+</div>
+<div>
+    <a *ngFor="let i of anchorElements">{{i}}</a>
+</div> -->
+
+ <div class="ekart--products--container">
+    
+<div class="ekart--product--item"   *ngFor="let products of products; let i=index">
+    <div class="ekart-wishlist-sale-container">
+        <div class="ekart--add--to--wishlist">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            <i>{{i}}</i>
+          </div>
+         
+        <div class="ekart-on-sale-tag">75% OFF</div>
+      </div>
+      <div class="ekart--product--image">
+          <img [src]="products.imageURL" class="ekart--product--image">
+      </div>
+    
+      <div class="ekart--add--to--price">
+          {{products.price}}
+      </div>
+      <div class="ekart--product--name">{{products.name}}</div>
+      <div class="ekart--product--category">{{products.gender}}. {{products.category}} . {{products.brand}}</div>
+      <div class="ekart--product--available-colors">{{products.color.length}} Colors . Best Seller</div>
+</div>
+</div>

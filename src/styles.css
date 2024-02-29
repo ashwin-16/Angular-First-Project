@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+/* @import "~../node_modules/bootstrap/dist/css/bootstrap.min.css"; */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;  
+}
+
+/* a{
+    text-decoration: none;   
+    padding: 0 10px; 
+    color: black;
+} */
+
+a:hover {
+    text-decoration: none;
+    background-size: 0 3px, 100% 3px;
+  }
+a {
+    padding: 0 10px; 
+    text-decoration: none;
+    color: black;
+    background:
+      linear-gradient(
+        to right,
+        rgba(100, 200, 200, 1),
+        rgba(100, 200, 200, 1)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+    background-size: 100% 0px, 0 0px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+

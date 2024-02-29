@@ -1,0 +1,47 @@
+<!-- just {{}} itit avdethe name ayitum vilikam -->
+
+<!-- <img src={{product.PImage}} width="25%"/>      
+    Normal calling -->
+
+<!-- property Binding -->
+<div class="ekart--product-container">
+    <img class="img-pic" [src]="product.PImage" />
+
+<p>Name: {{product.name}}</p> 
+<p>Price: {{'$'+product.price}}</p>
+<p>color: {{product.color}}</p>
+
+<!-- igneyum vilikam -->
+<!-- <p>Discounted Price:{{product.price-(product.price*product.discount/100)}}</p> -->
+
+<!-- methodil ititum vilikam -->
+<p>Discounted Price:{{getDiscountedPrice().toFixed(2)}}</p>
+<!-- to fixed upyogikunadh ethra decimal point venam nn -->
+
+<p>{{Instock()}}</p>
+
+<button (click)="DecrementCartValue()">-</button> 
+
+<span>{{addtocart}}</span>
+
+<button (click)="IncrementCartValue()">+</button>
+</div>
+
+<div class="extra">
+<!-- property Binding , Mainly using in button functions sadha data binding ella html attributinum patila -->
+<button [disabled]="!(product.inStock>0)">Buy Now</button>
+
+<!-- we can also use bind-disabled instead of [] bracket -->
+
+<!-- <input [value]="name"> -->
+
+
+ <!-- EVENT BINDING -->
+
+<!-- view templatin data component clasilot pass chyunu  by event , 
+    inputil type chyunadh avde poit ivde kanikunu -->
+
+<input (input)="onNameChange($event)">
+<p>Name :{{name}} </p>
+</div>
+
