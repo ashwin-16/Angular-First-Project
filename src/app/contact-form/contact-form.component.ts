@@ -82,6 +82,7 @@ export class ContactFormComponent implements OnInit{
       end: new FormControl(null)
     });
     (<FormArray>this.reactiveForm.get('experience')).push(formGroup);
+    console.log(<FormArray>this.reactiveForm.get('experience'));
   }
   delExperience(index:number){
     const delControl=<FormArray>this.reactiveForm.get('experience');
