@@ -11,9 +11,16 @@ import { SearchBarComponent } from './header/search-bar/search-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { BasicsComponent } from './basics/basics.component';
 import { SearchComponent } from './product-list/search/search.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgFor } from '@angular/common';
 import { ExampleComponent } from './example/example.component';
+import { ApiComponent } from './api/api.component';
+import { HttpServicesService } from './Services/http-services.service';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HomeComponent } from './home/home.component';
+import { AlertBoxComponent } from './alert-box/alert-box.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -28,12 +35,20 @@ import { ExampleComponent } from './example/example.component';
     BasicsComponent,
     SearchComponent,
     ExampleComponent,
+    ApiComponent,
+    ContactFormComponent,
+    HomeComponent,
+    AlertBoxComponent,
+
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgFor
+    NgFor,
+    ReactiveFormsModule,
+    BrowserAnimationsModule 
   ],
   providers: [
     provideClientHydration()

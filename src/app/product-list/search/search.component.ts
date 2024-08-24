@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class SearchComponent {
   search:string="mens watch"
+  
+   
 
   // UpdateSearchBox(event:any){
   //   this.search=event.target.value;

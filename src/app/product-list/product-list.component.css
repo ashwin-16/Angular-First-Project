@@ -1,3 +1,7 @@
+.main{
+    margin-left: -150px;
+}
+
 .ekart--products--container{
     margin: 20px auto;
     display:flex;
@@ -70,4 +74,41 @@
     border: #efefef 0 0 1px 3px #000 inset;
     box-shadow: 10px 10px 18px #cccccc;
     transform: scale(1.05);
+}
+
+.study{
+    width: 290px;
+    /* height: 400px; */
+    border: #efefef 2px solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+
+}
+.study:hover{
+    -webkit-box-shadow: 0 0 1px #000 inset;
+    -moz-box-shadow: 0 0 1px 3px #000 inset;
+    border: #efefef 0 0 1px 3px #000 inset;
+    box-shadow: 10px 10px 18px #cccccc;
+    transform: scale(1.05);
+}
+.for_image{
+    width: 265px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.text{
+    font-size: 14px;
+    color: #28282B;
+    margin-top: 7px; 
+    margin-left: 10px;       
+}
+.para{
+    font-size: 12px;
+    color: #999;
+    margin-top: 7px;
+}
+::-webkit-progress-bar{
+    visibility: inherit;
 }
